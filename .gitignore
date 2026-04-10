@@ -1,0 +1,75 @@
+# ---------- Node.js ----------
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json.bak
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# ---------- Flutter / Dart ----------
+.dart_tool/
+.packages
+.pub/
+build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.metadata
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+android/local.properties
+*.g.dart
+*.freezed.dart
+
+# ---------- Trained models & training assets (too large for git) ----------
+Training Work/
+retraining/glove_hard_negatives*/
+retraining/gloves_retrain*/
+retraining/*.zip
+ai-engine/Data/
+ai-engine/runs/
+runs/
+*.pt
+*.onnx
+*.weights
+best.pt
+last.pt
+
+# ---------- Runtime artifacts ----------
+*.log
+engine.log
+backend.log
+aiengine.log
+ai-engine/debug_cam*.jpg
+mobile/build/
+client/dist/
+*.bak
+*.bak_*
+main.py.bak
+main.py.bak_presync
+tsconfig.tsbuildinfo
+
+# ---------- Secrets ----------
+.env
+.env.local
+.env.production
+server/.env
+!.env.example
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# ---------- CI/deploy junk ----------
+.claude/
