@@ -1,0 +1,22 @@
+# Sentinel AI Engine — Server Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core AI
+ultralytics==8.3.145
+opencv-python-headless    # headless = no GUI, required on server
+numpy
+
+# Web server
+flask
+flask-cors
+
+# HTTP requests (to send violation data to Node.js API)
+requests
+
+# Image processing
+Pillow
+
+# Data (used by ultralytics internally)
+pandas
+matplotlib
+seaborn
