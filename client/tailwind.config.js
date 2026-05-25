@@ -1,0 +1,47 @@
+export default {
+  darkMode: 'class',
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        bg: 'var(--bg)',
+        surface: 'var(--surface)',
+        accent: 'var(--accent)',
+        'accent-contrast': 'var(--accent-contrast)',
+        t1: 'var(--t1)',
+        t2: 'var(--t2)',
+        t3: 'var(--t3)',
+        t4: 'var(--t4)',
+        t5: 'var(--t5)',
+        'media-1': 'var(--on-media-1)',
+        'media-2': 'var(--on-media-2)',
+        'media-3': 'var(--on-media-3)',
+        glass: 'var(--glass-bg)',
+        'glass-border': 'var(--glass-bd)',
+        line: 'var(--border)',
+        brand: {
+          50:  '#f0fdf4',
+          100: '#dcfce7',
+          200: '#bbf7d0',
+          300: '#86efac',
+          400: '#4ade80',
+          500: '#22c55e',
+          600: '#16a34a',
+          700: '#15803d',
+          800: '#166534',
+          900: '#14532d',
+        },
+      },
+    },
+    fontFamily: {
+      sans: ['"Inter"', 'system-ui', 'sans-serif'],
+      serif: ['"Inter"', 'system-ui', 'sans-serif'],
+      mono: ['"Inter"', 'system-ui', 'sans-serif'],
+      display: ['"Space Grotesk"', '"Inter"', 'sans-serif'],
+    },
+  },
+  plugins: [],
+};
