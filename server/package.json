@@ -21,7 +21,7 @@
         "mongoose": "^7.0.3",
         "mqtt": "^5.15.0",
         "mqtt-packet": "^9.0.2",
-        "nodemailer": "^7.0.12",
+        "nodemailer": "^9.0.4",
         "socket.io": "^4.6.1"
     },
     "devDependencies": {
