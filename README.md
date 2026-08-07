@@ -35,8 +35,11 @@ Sentinel watches a construction-site camera in real time and detects when a work
 > Drag your screenshots into GitHub's Markdown editor to replace the placeholders below.
 
 | Full PPE compliant | Missing PPE violation | Worker mobile alert |
-|:---:|:---:|:---:|
-| _drop screenshot here_ | _drop screenshot here_ | _drop screenshot here_ |
+|:--<img width="1920" height="1080" alt="Screenshot From 2026-07-30 00-21-12" src="https://github.com/user-attachments/assets/2572bbbd-7773-403f-8297-a7be66ce9110" />
+-:|:---:|:--<img width="1920" height="1080" alt="Screenshot From 2026-07-13 22-21-47" src="https://github.com/user-attachments/assets/607c7b4d-93f3-48b2-ab20-ed22d314aa9c" />
+-:|
+| _drop <img width="1920" height="1080" alt="Screenshot From 2026-08-01 12-25-49" src="https://github.com/user-attachments/assets/9ea74cdb-4878-4a8e-8143-988d68601600" />
+screenshot here_ | _drop screenshot here_ | _drop screenshot here_ |
 | Helmet OK · Vest OK · Glove OK | Red overlay, `MISSING: Helmet, Glove, Vest` | Full-screen red state, vibration + audio |
 
 ---
