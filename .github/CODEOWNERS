@@ -1,0 +1,9 @@
+# Default owners for everything in the repo
+*          @Sharmasheeno
+
+# Per-area owners
+/ai-engine/    @Sharmasheeno
+/server/       @Sharmasheeno
+/client/       @Sharmasheeno
+/mobile/       @Sharmasheeno
+/retraining/   @Sharmasheeno
