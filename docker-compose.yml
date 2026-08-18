@@ -1,0 +1,38 @@
+version: '3.9'
+services:
+  mongo:
+    image: mongo:6
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+
+  backend:
+    build: ./server
+    depends_on: [mongo]
+    environment:
+      MONGO_URI: mongodb://mongo:27017/ppe_monitoring
+      JWT_SECRET: ${JWT_SECRET:-change-me}
+      NODE_ENV: production
+    ports:
+      - "5001:5001"
+      - "1883:1883"
+    restart: unless-stopped
+
+  ai-engine:
+    build: ./ai-engine
+    depends_on: [backend]
+    environment:
+      BACKEND_URL: http://backend:5001
+      CAM_SOURCE: ${CAM_SOURCE:-none}
+    ports:
+      - "5002:5002"
+    devices:
+      - /dev/video0:/dev/video0     # expose webcam if present
+    restart: unless-stopped
+    volumes:
+      - ./Training Work:/Training Work:ro
+
+volumes:
+  mongo-data:
