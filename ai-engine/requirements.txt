@@ -2,7 +2,7 @@
 # Install with: pip install -r requirements.txt
 
 # Core AI
-ultralytics==8.3.145
+ultralytics==8.4.174
 opencv-python-headless    # headless = no GUI, required on server
 numpy
 
